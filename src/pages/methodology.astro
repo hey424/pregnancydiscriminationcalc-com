@@ -1,11 +1,44 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 const title = 'Methodology | pregnancydiscriminationcalc.com';
-const description = 'How the pregnancy discrimination damages calculator works: Title VII caps, back pay, and punitive damages for PDA violations.';
+const description = 'How the pregnancy discrimination damages calculator works: Title VII caps, back pay formula, compensatory and punitive damages for PDA and PWFA violations.';
 ---
 <BaseLayout title={title} description={description}>
-  <h1>Methodology</h1>
-  <p><em>Reviewed by Riley Chen (RC), Employment &amp; Civil Rights Practice Lead. Updated May 2026.</em></p>
-  <h2>Title VII framework</h2><p>Back pay: salary/12 × months lost (uncapped). Compensatory damages (emotional distress): 30% of cap without malice, 60% with malice. Punitive: 0 without malice, 40% of cap with malice. Front pay: 50% of annual salary for termination/constructive discharge. All subject to per-employer-size caps of $50K/$100K/$200K/$300K for combined comp + punitive.</p>
-  <h2>Cap application</h2><p>The Title VII damages cap applies to the combined compensatory + punitive award. Back pay and front pay are equitable remedies and are not capped. Attorney fees are separately recoverable by the prevailing plaintiff under 42 U.S.C. § 2000e-5(k).</p>
+  <h1>Calculator Methodology</h1>
+  <p><em>Reviewed by Prue Alderton (PA), Editor-in-Chief &mdash; Pregnancy Discrimination Practice. Updated May 2026.</em></p>
+
+  <p>This page explains how the pregnancy discrimination damages calculator estimates potential recovery under the Pregnancy Discrimination Act (PDA), Title VII of the Civil Rights Act, and the Pregnant Workers Fairness Act (PWFA). Every input, formula, and assumption is documented here so you can understand what the estimate includes and what it does not.</p>
+
+  <h2>Step 1: Back Pay Calculation</h2>
+  <p>Back pay represents wages and benefits lost from the date of the discriminatory act through the date of judgment or settlement. It is an equitable remedy and is not subject to the Title VII compensatory/punitive damages cap.</p>
+  <p><strong>Formula:</strong> (Annual salary &divide; 12) &times; months of lost employment.</p>
+  <p>For termination claims, "months of lost employment" is the period between the termination and re-employment at comparable wages. For demotion or pay reduction claims, back pay is calculated on the wage differential for the relevant period rather than on full salary. For failure-to-promote claims, back pay is calculated on the difference between the salary the employee was earning and the salary of the position they were improperly denied.</p>
+  <p>The duty to mitigate: Title VII requires plaintiffs to make reasonable efforts to find comparable employment. Damages can be reduced by wages the plaintiff earned or could have earned through reasonable job search efforts. The calculator does not apply a mitigation offset — you should apply that adjustment manually based on your actual post-termination earnings.</p>
+
+  <h2>Step 2: Compensatory and Punitive Damages</h2>
+  <p>Title VII, as amended by the Civil Rights Act of 1991, allows recovery of compensatory and punitive damages for intentional discrimination. These are subject to per-employer combined caps under 42 U.S.C. &sect; 1981a(b)(3):</p>
+  <ul>
+    <li>15–100 employees: $50,000 combined cap</li>
+    <li>101–200 employees: $100,000 combined cap</li>
+    <li>201–500 employees: $200,000 combined cap</li>
+    <li>500+ employees: $300,000 combined cap</li>
+  </ul>
+  <p><strong>Compensatory damages</strong> cover non-economic harm: emotional distress, pain and suffering, humiliation, damage to reputation, and loss of enjoyment of life. They require proof — medical records, therapy notes, witness testimony about behavioral changes. The calculator estimates compensatory damages at 30% of the applicable cap for claims without documented malice, and 60% of the cap when documented employer malice or reckless indifference is present.</p>
+  <p><strong>Punitive damages</strong> require proof that the employer acted with malice or reckless indifference to federally protected rights under Kolstad v. American Dental Association, 527 U.S. 526 (1999). They are not available in every case. The calculator applies a punitive estimate of 40% of the cap only when the malice option is selected, and 0% otherwise. Punitive damages and compensatory damages combined cannot exceed the statutory cap for the employer's size.</p>
+
+  <h2>Step 3: Front Pay</h2>
+  <p>Front pay is an equitable remedy for future lost earnings when reinstatement is not feasible — for example, when the working relationship has been irreparably damaged, or when no comparable position is available. Courts calculate front pay based on the plaintiff's age, the likely duration of future wage loss, the plaintiff's job prospects, and a present-value discount.</p>
+  <p>The calculator applies a front pay estimate of 50% of annual salary for termination and constructive discharge claims. This is a conservative approximation; actual front pay awards vary considerably based on individual circumstances, career stage, and labor market conditions.</p>
+  <p>Front pay is not subject to the Title VII compensatory/punitive cap because it is an equitable rather than legal remedy.</p>
+
+  <h2>Known Limitations</h2>
+  <ul>
+    <li><strong>Attorney fees:</strong> Title VII &sect; 706(k) provides for mandatory attorney fee awards to prevailing plaintiffs, paid by the defendant employer. The calculator does not include attorney fees in the estimate, as they are determined by the court based on hours and rates rather than as a percentage of recovery.</li>
+    <li><strong>State law claims:</strong> Many states have their own pregnancy and sex discrimination statutes with different (sometimes higher) caps or no caps at all. New York, California, New Jersey, and Washington state, among others, provide broader remedies than federal Title VII. The calculator reflects federal Title VII limits only.</li>
+    <li><strong>PWFA damages:</strong> The Pregnant Workers Fairness Act (effective June 2023) uses the same Title VII remedial framework, including the same caps. PWFA violations are incorporated into the calculator's compensatory/punitive estimates where accommodation failure is selected as the adverse action type.</li>
+    <li><strong>Emotional distress proof requirements:</strong> Compensatory damages for emotional distress require admissible evidence. Bare assertions without corroboration may result in lower jury awards than the estimate suggests. Medical documentation and contemporaneous records strengthen emotional distress claims.</li>
+    <li><strong>Willfulness vs. malice:</strong> The PDA/Title VII malice standard for punitive damages (Kolstad) differs from the "willful" standard under the FLSA. Punitive damages under Title VII require specific knowledge that the conduct was unlawful, not merely intentional discrimination.</li>
+  </ul>
+
+  <p>Return to the <a href="/">calculator</a>, or see the <a href="/guides/how-pregnancy-discrimination-damages-work">full damages guide</a> for a plain-English explanation of each component.</p>
 </BaseLayout>

@@ -5,9 +5,10 @@ const description = 'Estimate potential damages for pregnancy discrimination und
 ---
 <BaseLayout title={title} description={description}>
   <h1>Pregnancy Discrimination Damages Calculator</h1>
-  <p><em>Reviewed by Riley Chen (RC), Employment &amp; Civil Rights Practice Lead. Updated May 2026.</em></p>
-  <p>The Pregnancy Discrimination Act (PDA) of 1978 amended Title VII to prohibit discrimination based on pregnancy, childbirth, or related medical conditions. The PUMP Act (2022) extended lactation accommodation rights. Under Title VII, employers with 15+ employees cannot fire, demote, reduce hours, deny promotion, or otherwise treat pregnant employees less favorably than similarly situated non-pregnant workers. This calculator estimates potential recovery.</p>
-  <h2>Run the estimate</h2>
+  <p><em>Reviewed by Prue Alderton (PA), Editor-in-Chief &mdash; Pregnancy Discrimination Practice. Updated May 2026.</em></p>
+  <p>The Pregnancy Discrimination Act (PDA) of 1978 amended Title VII to prohibit discrimination based on pregnancy, childbirth, or related medical conditions. The Pregnant Workers Fairness Act (PWFA), effective June 2023, added an affirmative accommodation requirement. The PUMP Act (2022) extended lactation accommodation rights. Together, these federal laws protect workers at employers with 15 or more employees from a wide range of discriminatory conduct — including termination, demotion, failure to accommodate, denial of promotion, and hostile work environments — and provide meaningful financial remedies when violations occur. This calculator estimates your potential recovery.</p>
+
+  <h2>Run the Estimate</h2>
   <form id="calc" novalidate>
     <label for="salary">Annual salary (USD)</label>
     <input id="salary" type="number" value="70000" min="0" />
@@ -36,10 +37,33 @@ const description = 'Estimate potential damages for pregnancy discrimination und
     <button type="submit">Estimate damages</button>
   </form>
   <p id="result" aria-live="polite"></p>
-  <h2>How PDA / Title VII damages work</h2>
-  <p>Pregnancy discrimination claims under Title VII follow the same damages framework as other Title VII claims: back pay (uncapped), compensatory damages for emotional distress (capped by employer size), punitive damages for malice or reckless indifference (within the same cap), front pay, and attorney fees. The PWFA (Pregnant Workers Fairness Act, 2023) added explicit reasonable accommodation requirements, similar to the ADA.</p>
-  <h2>Where to learn more</h2>
-  <p>See <a href="/guides/how-pregnancy-discrimination-damages-work">how pregnancy discrimination damages work</a>, <a href="/guides/types-of-pregnancy-discrimination">types of pregnancy discrimination</a>, <a href="/guides/what-to-do-after-pregnancy-discrimination">what to do after pregnancy discrimination</a>, and <a href="/guides/pregnancy-discrimination-misconceptions">common misconceptions</a>.</p>
+
+  <h2>How Pregnancy Discrimination Damages Are Calculated</h2>
+  <p>Pregnancy discrimination claims under Title VII follow a structured damages framework with several distinct components. Understanding each component helps you assess which aspects of your situation are most significant to your potential recovery.</p>
+
+  <h3>Back Pay (Uncapped)</h3>
+  <p>Back pay covers all wages and benefits lost from the date of the discriminatory act through the date of settlement or judgment. It is an equitable remedy, not subject to the Title VII damages caps. If you were terminated, back pay runs from your last day of employment through the date you found equivalent work — or longer if you have not yet been re-employed. If you were demoted or had your pay reduced, back pay is the difference between what you were paid and what you should have been paid for the applicable period. Courts reduce back pay by amounts earned or that could have been earned through reasonable job search effort.</p>
+
+  <h3>Compensatory and Punitive Damages (Capped)</h3>
+  <p>The Civil Rights Act of 1991 added compensatory and punitive damages to the Title VII remedial scheme, subject to per-employer-size caps. Compensatory damages cover emotional distress, pain and suffering, humiliation, and loss of enjoyment of life — non-economic harm caused by the discrimination. Punitive damages require proof that the employer acted with malice or reckless indifference to your federally protected rights, as established in Kolstad v. American Dental Association, 527 U.S. 526 (1999). The combined compensatory and punitive cap ranges from $50,000 (smallest covered employers) to $300,000 (500+ employees).</p>
+
+  <h3>Front Pay (Uncapped)</h3>
+  <p>When reinstatement is not feasible — because the relationship has broken down, because no comparable position is available, or because the work environment would be hostile — courts award front pay to compensate for future earnings lost due to the discrimination. Front pay is an equitable remedy determined by the judge, not the jury, and is not subject to the Title VII cap. Duration depends on your age, career stage, the local labor market, and the likelihood of finding equivalent employment.</p>
+
+  <h3>Attorney Fees</h3>
+  <p>Title VII &sect; 706(k) provides that prevailing plaintiffs are entitled to attorney fees and costs from the defendant employer. This means that employment attorneys take pregnancy discrimination cases on contingency because their compensation comes from the employer, separately from and in addition to your damages. This makes even moderate-value claims economically viable to pursue.</p>
+
+  <h2>Learn More</h2>
+  <ul>
+    <li><a href="/guides/how-pregnancy-discrimination-damages-work">How pregnancy discrimination damages work</a></li>
+    <li><a href="/guides/types-of-pregnancy-discrimination">Types of pregnancy discrimination</a></li>
+    <li><a href="/guides/what-to-do-after-pregnancy-discrimination">What to do after pregnancy discrimination</a></li>
+    <li><a href="/guides/pregnancy-discrimination-misconceptions">Common misconceptions</a></li>
+    <li><a href="/case-types">Case types overview</a></li>
+    <li><a href="/methodology">Calculator methodology</a></li>
+    <li><a href="/faq">Frequently asked questions</a></li>
+  </ul>
+
   <script>
     document.getElementById('calc').addEventListener('submit', e => {
       e.preventDefault();
