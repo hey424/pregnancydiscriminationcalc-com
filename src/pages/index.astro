@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadCapture from '../components/LeadCapture.astro';
 const title = 'Pregnancy Discrimination Damages Calculator | pregnancydiscriminationcalc.com';
 const description = 'Estimate potential damages for pregnancy discrimination under the Pregnancy Discrimination Act and Title VII: back pay, compensatory, punitive damages. Free, informational.';
 ---
@@ -36,7 +37,10 @@ const description = 'Estimate potential damages for pregnancy discrimination und
     </select>
     <button type="submit">Estimate damages</button>
   </form>
-  <p id="result" aria-live="polite"></p>
+  
+
+  <LeadCapture caseType="pregnancy_discrimination" caseTypeLabel="Pregnancy Discrimination" />
+<p id="result" aria-live="polite"></p>
 
   <h2>How Pregnancy Discrimination Damages Are Calculated</h2>
   <p>Pregnancy discrimination claims under Title VII follow a structured damages framework with several distinct components. Understanding each component helps you assess which aspects of your situation are most significant to your potential recovery.</p>
@@ -55,13 +59,13 @@ const description = 'Estimate potential damages for pregnancy discrimination und
 
   <h2>Learn More</h2>
   <ul>
-    <li><a href="/guides/how-pregnancy-discrimination-damages-work">How pregnancy discrimination damages work</a></li>
-    <li><a href="/guides/types-of-pregnancy-discrimination">Types of pregnancy discrimination</a></li>
-    <li><a href="/guides/what-to-do-after-pregnancy-discrimination">What to do after pregnancy discrimination</a></li>
-    <li><a href="/guides/pregnancy-discrimination-misconceptions">Common misconceptions</a></li>
-    <li><a href="/case-types">Case types overview</a></li>
-    <li><a href="/methodology">Calculator methodology</a></li>
-    <li><a href="/faq">Frequently asked questions</a></li>
+    <li><a href="/guides/how-pregnancy-discrimination-damages-work/">How pregnancy discrimination damages work</a></li>
+    <li><a href="/guides/types-of-pregnancy-discrimination/">Types of pregnancy discrimination</a></li>
+    <li><a href="/guides/what-to-do-after-pregnancy-discrimination/">What to do after pregnancy discrimination</a></li>
+    <li><a href="/guides/pregnancy-discrimination-misconceptions/">Common misconceptions</a></li>
+    <li><a href="/case-types/">Case types overview</a></li>
+    <li><a href="/methodology/">Calculator methodology</a></li>
+    <li><a href="/faq/">Frequently asked questions</a></li>
   </ul>
 
   <script>
